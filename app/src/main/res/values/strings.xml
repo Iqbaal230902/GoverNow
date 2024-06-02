@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Governow</string>
+    <string name="app_icon">Governow</string>
+    <string name="login_button">Masuk</string>
+    <string name="signup_botton">Daftar</string>
+    <string name="welcome_title">Governow</string>
+</resources>
