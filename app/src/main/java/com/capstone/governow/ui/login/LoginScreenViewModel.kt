@@ -9,10 +9,10 @@ import com.capstone.governow.api.ApiConfig
 import com.capstone.governow.data.repository.UserRepository
 import com.capstone.governow.data.request.LoginRequest
 import com.capstone.governow.data.respone.DataLoginResponse
-import com.capstone.governow.data.respone.DataProfileResponse
+import com.capstone.governow.data.respone.ProfileData
 import com.capstone.governow.data.respone.LoginResponse
 import com.capstone.governow.data.respone.ProfileResponse
-import com.capstone.governow.model.UserModel
+import com.capstone.governow.data.model.UserModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -45,7 +45,7 @@ class LoginScreenViewModel(private val repository: UserRepository) : ViewModel()
             val call = ApiConfig.apiInstance.getProfile("Bearer $token")
             val response = call.execute()
             if (response.isSuccessful) {
-                result = ProfileResponse(response.body()?.message, DataProfileResponse(response.body()?.data?.fullName, response.body()?.data?.email, response.body()?.data?.username))
+                result = ProfileResponse(response.body()?.message.toString(), ProfileData(response.body()?.data?.fullName.toString(), response.body()?.data?.email.toString(), response.body()?.data?.username.toString()))
             }
         }
 

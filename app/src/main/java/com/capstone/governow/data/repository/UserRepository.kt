@@ -1,7 +1,7 @@
 package com.capstone.governow.data.repository
 
 import com.capstone.governow.data.pref.UserPreference
-import com.capstone.governow.model.UserModel
+import com.capstone.governow.data.model.UserModel
 import kotlinx.coroutines.flow.Flow
 
 class UserRepository(

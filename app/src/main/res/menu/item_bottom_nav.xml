@@ -10,9 +10,18 @@
         android:enabled="true"
         android:icon="@drawable/ic_newspaper"
         android:title="News" />
+
+    <item
+        android:id="@+id/form"
+        android:enabled="true"
+        android:icon="@drawable/ic_form"
+        android:title="Form" />
+
     <item
         android:id="@+id/profile"
         android:enabled="true"
         android:icon="@drawable/ic_person"
         android:title="Profile" />
+
+
 </menu>

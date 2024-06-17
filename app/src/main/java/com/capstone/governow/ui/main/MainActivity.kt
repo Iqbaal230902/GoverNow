@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.capstone.governow.R
+import com.capstone.governow.ui.edit.EditProfileActivity
+import com.capstone.governow.ui.form.FormActivity
 import com.capstone.governow.ui.login.LoginScreenActivity
 import com.capstone.governow.ui.news.NewsActivity
 import com.capstone.governow.ui.profileuser.ProfileUserActivity
@@ -33,9 +35,16 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, NewsActivity::class.java)
                     startActivity(intent)
                 }
-                    R.id.profile -> {
+
+                R.id.profile -> {
                     // Respond to navigation item 2 reselection
                     val intent = Intent(this, ProfileUserActivity::class.java )
+                    startActivity(intent)
+                }
+
+                R.id.form -> {
+                    // Respond to navigation item 2 reselection
+                    val intent = Intent(this, FormActivity::class.java )
                     startActivity(intent)
                 }
             }

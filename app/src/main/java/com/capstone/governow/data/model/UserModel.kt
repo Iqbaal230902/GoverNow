@@ -1,4 +1,4 @@
-package com.capstone.governow.model
+package com.capstone.governow.data.model
 
 data class UserModel(
     val fullName: String?,

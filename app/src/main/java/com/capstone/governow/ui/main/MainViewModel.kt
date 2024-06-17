@@ -8,7 +8,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import com.capstone.governow.data.repository.UserRepository
 import com.capstone.governow.di.Injection
-import com.capstone.governow.model.UserModel
+import com.capstone.governow.data.model.UserModel
 import com.google.firebase.firestore.auth.User
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch

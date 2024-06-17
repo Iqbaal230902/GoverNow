@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/person_outline/baseline_person_outline_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/volunteer_activism/baseline_volunteer_activism_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_person" />
+                            <entry key="color" value="9b00ff" />
+                            <entry key="outputName" value="ic_setting" />
                             <entry key="sourceFile" value="D:\Bangkit Batch 1\Capstone\Governow" />
                           </map>
                         </option>

@@ -5,6 +5,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.capstone.governow.data.repository.UserRepository
 import com.capstone.governow.di.Injection
+import com.capstone.governow.ui.edit.EditProfileViewModel
+import com.capstone.governow.ui.form.add.AddFormViewModel
 import com.capstone.governow.ui.login.LoginScreenViewModel
 import com.capstone.governow.ui.main.MainViewModel
 import com.capstone.governow.ui.signup.SignUpScreenViewModel
@@ -22,6 +24,12 @@ class ViewModelFactory (private val repository: UserRepository) : ViewModelProvi
             }
             modelClass.isAssignableFrom(SignUpScreenViewModel::class.java) -> {
                 SignUpScreenViewModel() as T
+            }
+            modelClass.isAssignableFrom(EditProfileViewModel::class.java) -> {
+                EditProfileViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(AddFormViewModel::class.java) -> {
+                EditProfileViewModel(repository) as T
             }
 
             else -> throw IllegalArgumentException("Unknown ViewModel class : "+modelClass.name)

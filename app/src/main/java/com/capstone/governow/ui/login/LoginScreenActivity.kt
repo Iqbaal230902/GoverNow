@@ -16,7 +16,7 @@ import com.capstone.governow.R
 import com.capstone.governow.customview.EmailEditText
 import com.capstone.governow.customview.PasswordEditText
 import com.capstone.governow.databinding.ActivityLoginScreenBinding
-import com.capstone.governow.model.UserModel
+import com.capstone.governow.data.model.UserModel
 import com.capstone.governow.ui.ViewModelFactory
 import com.capstone.governow.ui.main.MainActivity
 
@@ -76,6 +76,11 @@ class LoginScreenActivity : AppCompatActivity() {
                 val email = user?.email
 
                 viewModel.saveSession(UserModel(fullName, email, username, token))
+                viewModel.getSession().observe(this) { user ->
+                    if (user != null) {
+                        Log.d("hohot",  user.token.toString())
+                    }
+                }
 
                 Log.d("uhuyy2", "hihi")
                 startActivity(Intent(this, MainActivity::class.java))

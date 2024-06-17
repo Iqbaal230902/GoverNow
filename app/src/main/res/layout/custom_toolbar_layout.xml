@@ -27,6 +27,7 @@
             android:layout_gravity="center"
             android:src="@drawable/app"
             android:contentDescription="@string/toolbar_image_description"/>
+
     </FrameLayout>
 
     <TextView
@@ -37,4 +38,5 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"/>
+
 </LinearLayout>
